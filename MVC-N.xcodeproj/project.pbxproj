@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		48598AD52C05EBB8006C7A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AD42C05EBB8006C7A4D /* AppDelegate.swift */; };
 		48598AD72C05EBB8006C7A4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AD62C05EBB8006C7A4D /* SceneDelegate.swift */; };
-		48598AD92C05EBB8006C7A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AD82C05EBB8006C7A4D /* ViewController.swift */; };
+		48598AD92C05EBB8006C7A4D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AD82C05EBB8006C7A4D /* CommentsViewController.swift */; };
 		48598ADC2C05EBB8006C7A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 48598ADB2C05EBB8006C7A4D /* Base */; };
 		48598ADE2C05EBB9006C7A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48598ADD2C05EBB9006C7A4D /* Assets.xcassets */; };
 		48598AE12C05EBB9006C7A4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 48598AE02C05EBB9006C7A4D /* Base */; };
+		48598AF22C05F056006C7A4D /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AF12C05F056006C7A4D /* CommentCell.swift */; };
+		48598AF42C05F155006C7A4D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AF32C05F155006C7A4D /* Comment.swift */; };
+		48598AF72C05F661006C7A4D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AF62C05F661006C7A4D /* NetworkService.swift */; };
+		48598AFA2C05FFE5006C7A4D /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AF92C05FFE5006C7A4D /* CommentNetworkService.swift */; };
+		48598AFD2C0600DD006C7A4D /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AFC2C0600DD006C7A4D /* GetCommentResponse.swift */; };
+		48598B002C060310006C7A4D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48598AFF2C060310006C7A4D /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48598AD12C05EBB8006C7A4D /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48598AD42C05EBB8006C7A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48598AD62C05EBB8006C7A4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48598AD82C05EBB8006C7A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48598ADB2C05EBB8006C7A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48598AD82C05EBB8006C7A4D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		48598ADB2C05EBB8006C7A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		48598ADD2C05EBB9006C7A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48598AE02C05EBB9006C7A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48598AE22C05EBB9006C7A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48598AF12C05F056006C7A4D /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		48598AF32C05F155006C7A4D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		48598AF62C05F661006C7A4D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		48598AF92C05FFE5006C7A4D /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		48598AFC2C0600DD006C7A4D /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		48598AFF2C060310006C7A4D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,117 @@
 		48598AD32C05EBB8006C7A4D /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				48598AD42C05EBB8006C7A4D /* AppDelegate.swift */,
-				48598AD62C05EBB8006C7A4D /* SceneDelegate.swift */,
-				48598AD82C05EBB8006C7A4D /* ViewController.swift */,
-				48598ADA2C05EBB8006C7A4D /* Main.storyboard */,
-				48598ADD2C05EBB9006C7A4D /* Assets.xcassets */,
-				48598ADF2C05EBB9006C7A4D /* LaunchScreen.storyboard */,
-				48598AE22C05EBB9006C7A4D /* Info.plist */,
+				48598AE82C05EBC9006C7A4D /* Application */,
+				48598AEC2C05EBF4006C7A4D /* Comments */,
+				48598AF02C05EC63006C7A4D /* Supporting files */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		48598AE82C05EBC9006C7A4D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				48598AEB2C05EBE7006C7A4D /* Model */,
+				48598AEA2C05EBE0006C7A4D /* View */,
+				48598AE92C05EBD2006C7A4D /* Controller */,
+				48598AF52C05F643006C7A4D /* NetworkService */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		48598AE92C05EBD2006C7A4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48598AD42C05EBB8006C7A4D /* AppDelegate.swift */,
+				48598AD62C05EBB8006C7A4D /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48598AEA2C05EBE0006C7A4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48598ADF2C05EBB9006C7A4D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48598AEB2C05EBE7006C7A4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48598AFF2C060310006C7A4D /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48598AEC2C05EBF4006C7A4D /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				48598AED2C05EC0C006C7A4D /* Model */,
+				48598AEE2C05EC0C006C7A4D /* View */,
+				48598AEF2C05EC0C006C7A4D /* Controller */,
+				48598AF82C05FFB8006C7A4D /* CommentNetworkService */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		48598AED2C05EC0C006C7A4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48598AFE2C060284006C7A4D /* Responses */,
+				48598AF32C05F155006C7A4D /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48598AEE2C05EC0C006C7A4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48598ADA2C05EBB8006C7A4D /* Comments.storyboard */,
+				48598AF12C05F056006C7A4D /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48598AEF2C05EC0C006C7A4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48598AD82C05EBB8006C7A4D /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48598AF02C05EC63006C7A4D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				48598ADD2C05EBB9006C7A4D /* Assets.xcassets */,
+				48598AE22C05EBB9006C7A4D /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		48598AF52C05F643006C7A4D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				48598AF62C05F661006C7A4D /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		48598AF82C05FFB8006C7A4D /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				48598AF92C05FFE5006C7A4D /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		48598AFE2C060284006C7A4D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				48598AFC2C0600DD006C7A4D /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,21 +252,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48598AD92C05EBB8006C7A4D /* ViewController.swift in Sources */,
+				48598AF42C05F155006C7A4D /* Comment.swift in Sources */,
+				48598AD92C05EBB8006C7A4D /* CommentsViewController.swift in Sources */,
 				48598AD52C05EBB8006C7A4D /* AppDelegate.swift in Sources */,
 				48598AD72C05EBB8006C7A4D /* SceneDelegate.swift in Sources */,
+				48598AF72C05F661006C7A4D /* NetworkService.swift in Sources */,
+				48598AFD2C0600DD006C7A4D /* GetCommentResponse.swift in Sources */,
+				48598B002C060310006C7A4D /* NetworkError.swift in Sources */,
+				48598AF22C05F056006C7A4D /* CommentCell.swift in Sources */,
+				48598AFA2C05FFE5006C7A4D /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		48598ADA2C05EBB8006C7A4D /* Main.storyboard */ = {
+		48598ADA2C05EBB8006C7A4D /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				48598ADB2C05EBB8006C7A4D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		48598ADF2C05EBB9006C7A4D /* LaunchScreen.storyboard */ = {
@@ -294,12 +414,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TUPKULQZ9B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Comments;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +429,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sivozelezov.MVC-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,12 +448,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TUPKULQZ9B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVC-N/Info.plist";
+				INFOPLIST_FILE = "MVC-N/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Comments;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +463,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sivozelezov.MVC-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
